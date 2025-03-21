@@ -1,2 +1,2 @@
 # instalink
-A basic chrome extension project (for now).
+InstaLink is a simple QR code generator extension for your browser.
