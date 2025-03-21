@@ -1,6 +1,6 @@
 {
     "name": "InstaLink",
-    "description": "A Chrome extension that lets you locally share links.",
+    "description": "A browser extension that instantly generates QR codes",
     "version": "1.0",
     "manifest_version": 3,
     "action": {
@@ -8,13 +8,7 @@
         "default_icon": "instalink.png"
     },
     "permissions": [
-        "clipboardRead",
-        "storage",
         "tabs"
-    ],
-    "host_permissions": [
-        "http://*/*",
-        "https://*/*"
     ],
     "content_security_policy": {
         "extension_pages": "script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com"
