@@ -1,0 +1,22 @@
+{
+    "name": "InstaLink",
+    "description": "A Chrome extension that lets you locally share links.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "main.html",
+        "default_icon": "instalink.png"
+    },
+    "permissions": [
+        "clipboardRead",
+        "storage",
+        "tabs"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com"
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <title>QR Code Generator</title>
+    <script src="./qrcode.min.js"></script>
+</head>
+
+<body>
+    <h1> InstaLink<span class="rotate-text">⚡</span></h1>
+    <form id="form">
+        <input type="text" id="url" placeholder="Enter URL" required>
+        <button type="submit" id="generate">Generate QR Code ✅</button>
+        <button type="submit">Reset QR 🔄</button>
+    </form>
+    <div id="qrcode"></div>
+    <script src="popup.js"></script>
+
+</body>
+
+<footer>
+    Made with ❤️ by <a href="https://github.com/RyanX5" target="_blank">Rohan</a>
+</footer>
+
+</html>

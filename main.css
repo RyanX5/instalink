@@ -1,0 +1,124 @@
+body {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    width: 210px;
+    height: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+h1 {
+    margin: 30px 14px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.rotate-text {
+    display: inline-block;
+    animation: rotateText 1.5s ease-in infinite;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border-radius: 26px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: white;
+    border: none;
+    margin: 20px 14px;
+    font-family: "DM Sans", sans-serif;
+    box-shadow: none;
+    transition: 0.3s;
+    transition-property: box-shadow;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid white;
+    box-shadow: 0 0 5px white, 0 0 15px white,
+        0 0 60px white;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+button {
+    border-radius: 26px;
+    padding: 8px 14px;
+    margin: 4px 14px;
+    background-color: rgba(255, 255, 255, 1.0);
+    box-shadow: 0 0 10px white;
+    border-color: white;
+    border: none;
+    color: black;
+    transition: 0.3s;
+    transition-property: box-shadow;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow:
+        0 0 5px white, 0 0 15px white,
+        0 0 50px white,
+        0 0 100px white;
+}
+
+#qrcode {
+    width: 150px;
+    height: 150px;
+    margin: 25px auto;
+}
+
+#qrcode img {
+    filter: invert(100%) opacity(1.0);
+    background-color: transparent;
+    mix-blend-mode: screen;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
