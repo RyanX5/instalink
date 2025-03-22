@@ -7,9 +7,6 @@
         "default_popup": "main.html",
         "default_icon": "instalink.png"
     },
-    "permissions": [
-        "tabs"
-    ],
     "content_security_policy": {
         "extension_pages": "script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com"
     }
